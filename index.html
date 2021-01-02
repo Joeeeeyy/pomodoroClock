@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/06a65f96b2.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pomodoro Clock</h1>
+    </header>
+    <main class="pomodoro-timer">
+        <section class="timer">
+            <div id="timer-label">Session Time</div>
+            <div id="time-left">
+                <h1>25:00</h1>
+            </div>
+            <audio id="beep" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
+        </section>
+        <section class="controls">
+            <button id="stop"><i class="fas fa-stop"></i></button>
+            <button id="start_stop" class="">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-pause"></i>
+            </button>
+            <button id="reset"><i class="fas fa-sync-alt"></i></button>
+        </section>
+        <section class="duration-setting">
+            <section class="setting">
+                <div id="break-label" class="label">Break Length</div>
+                <button id="break-decrement"><i class="fas fa-chevron-down"></i></button>
+                <div id="break-length">5</div>
+                <button id="break-increment"><i class="fas fa-chevron-up"></i></button>
+            </section>
+            <section class="setting">
+                <div id="session-label" class="label">Session Length</div>
+                <button id="session-decrement"><i class="fas fa-chevron-down"></i></button>
+                <div id="session-length">25</div>
+                <button id="session-increment"><i class="fas fa-chevron-up"></i></button>
+            </section>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
